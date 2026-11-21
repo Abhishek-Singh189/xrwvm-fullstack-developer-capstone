@@ -1,8 +1,8 @@
-# xrwvm-fullstack-developer-capstone
+# xrwvm-fullstack_developer_capstone
 
 ## Project name
 
-**Dealership Capstone Application**
+**Fullstack Developer Capstone**
 
 This project is a full-stack dealership review application built with Django, React, Node.js, Express, MongoDB, and a Flask sentiment-analysis service.
 

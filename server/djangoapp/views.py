@@ -42,7 +42,7 @@ def login_user(request):
 @csrf_exempt
 def logout_request(request):
     logout(request)
-    return JsonResponse({"status": "Logged out"})
+    return JsonResponse({"userName": "", "status": "Logged out"})
 
 
 @csrf_exempt
@@ -134,6 +134,15 @@ def get_cars(request):
         cars = {"CarModels": []}
 
     return JsonResponse(cars)
+
+
+def analyze_text(request, text):
+    if request.method != "GET":
+        return JsonResponse({"error": "GET required"}, status=405)
+    return JsonResponse({
+        "text": text,
+        "sentiment": analyze_review_sentiments(text),
+    })
 
 
 def home(request):

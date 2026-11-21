@@ -15,4 +15,5 @@ urlpatterns = [
     path("reviews/dealer/<int:dealer_id>", views.get_dealer_reviews, name="reviews"),
     path("add_review", views.add_review, name="add_review"),
     path("get_cars", views.get_cars, name="get_cars"),
+    path("analyze/<path:text>", views.analyze_text, name="analyze_text"),
 ]

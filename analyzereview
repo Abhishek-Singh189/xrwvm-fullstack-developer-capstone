@@ -1,2 +1,3 @@
-python manage.py shell -c "from djangoapp.restapis import analyze_review_sentiments; print(analyze_review_sentiments('Fantastic services'))"
-positive
+curl.exe -s http://127.0.0.1:8000/djangoapp/analyze/Fantastic%20services
+
+{"text": "Fantastic services", "sentiment": "positive"}

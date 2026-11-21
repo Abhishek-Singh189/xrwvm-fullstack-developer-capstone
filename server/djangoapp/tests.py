@@ -28,3 +28,11 @@ class AuthenticationTests(TestCase):
         response = self.client.get(reverse("djangoapp:logout"))
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json()["status"], "Logged out")
+        self.assertEqual(response.json()["userName"], "")
+
+    def test_sentiment_analysis(self):
+        response = self.client.get(
+            reverse("djangoapp:analyze_text", kwargs={"text": "Fantastic services"})
+        )
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json()["sentiment"], "positive")
