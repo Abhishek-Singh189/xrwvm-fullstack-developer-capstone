@@ -1,0 +1,2 @@
+python manage.py shell -c "from djangoapp.restapis import analyze_review_sentiments; print(analyze_review_sentiments('Fantastic services'))"
+positive

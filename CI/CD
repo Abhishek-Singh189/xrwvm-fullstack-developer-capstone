@@ -1,0 +1,13 @@
+GitHub Actions workflow: Dealership Capstone CI
+
+frontend-build:
+- Checkout repository
+- Set up Node.js 20
+- Install frontend dependencies (npm ci)
+- Build React application (CI=false npm run build)
+
+backend-check:
+- Checkout repository
+- Set up Python 3.11
+- Install Django dependencies
+- Run python manage.py check

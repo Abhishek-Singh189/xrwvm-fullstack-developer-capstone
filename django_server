@@ -1,0 +1,8 @@
+PS C:\Users\Abhishek Singh\xrwvm-fullstack-developer-capstone\server> python manage.py runserver 127.0.0.1:8000
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 21, 2026 - 18:51:41
+Django version 4.2.30, using settings 'djangoproj.settings'
+Starting development server at http://127.0.0.1:8000/

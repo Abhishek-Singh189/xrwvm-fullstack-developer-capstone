@@ -1,1 +1,3 @@
-{"CarModels": []}
+curl.exe -s http://127.0.0.1:8000/djangoapp/get_cars
+
+{"CarModels": [{"CarMake": "Nissan", "CarModel": "Pathfinder"}, {"CarMake": "Kia", "CarModel": "Seltos"}, {"CarMake": "Audi", "CarModel": "A4"}, {"CarMake": "Mercedes", "CarModel": "GLE"}, {"CarMake": "Toyota", "CarModel": "Camry"}, {"CarMake": "Audi", "CarModel": "A6"}, {"CarMake": "Toyota", "CarModel": "Corolla"}]}

@@ -45,4 +45,3 @@ jobs:
       - name: Check Django configuration
         working-directory: server
         run: python manage.py check
-run: CI=false npm run buildo

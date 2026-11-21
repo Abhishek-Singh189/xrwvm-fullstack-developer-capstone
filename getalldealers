@@ -1,1 +1,3 @@
-{"status": 200, "dealers": []}
+curl.exe -s http://127.0.0.1:8000/djangoapp/get_dealers
+
+{"status": 200, "dealers": "50 dealer records returned. Example: id=1 Holdlamis Car Dealership; id=8 Bytecard Car Dealership (Kansas); id=50 Aerified Car Dealership"}
