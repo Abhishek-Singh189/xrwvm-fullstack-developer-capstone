@@ -1,0 +1,47 @@
+name: Dealership Capstone CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  frontend-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install frontend dependencies
+        working-directory: server/frontend
+        run: npm ci
+
+      - name: Build React application
+        working-directory: server/frontend
+        run: npm run build
+
+  backend-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Django dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install Django requests python-dotenv
+
+      - name: Check Django configuration
+        working-directory: server
+        run: python manage.py check
