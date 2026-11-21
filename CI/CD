@@ -1,13 +1,428 @@
-GitHub Actions workflow: Dealership Capstone CI
-
-frontend-build:
-- Checkout repository
-- Set up Node.js 20
-- Install frontend dependencies (npm ci)
-- Build React application (CI=false npm run build)
-
-backend-check:
-- Checkout repository
-- Set up Python 3.11
-- Install Django dependencies
-- Run python manage.py check
+backend-check	Set up job	﻿2026-11-21T14:21:31.8420020Z Current runner version: '2.338.2'
+backend-check	Set up job	2026-11-21T14:21:31.8445868Z ##[group]Runner Image Provisioner
+backend-check	Set up job	2026-11-21T14:21:31.8446838Z Hosted Compute Agent
+backend-check	Set up job	2026-11-21T14:21:31.8447429Z Version: 20261111.635
+backend-check	Set up job	2026-11-21T14:21:31.8448101Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+backend-check	Set up job	2026-11-21T14:21:31.8448882Z Build Date: 2026-11-11T01:49:01Z
+backend-check	Set up job	2026-11-21T14:21:31.8449572Z Worker ID: {1bac47f8-63b8-4bc3-a395-8f05956babf9}
+backend-check	Set up job	2026-11-21T14:21:31.8450336Z Region: northcentralus
+backend-check	Set up job	2026-11-21T14:21:31.8450910Z Cloud: Azure
+backend-check	Set up job	2026-11-21T14:21:31.8451424Z ##[endgroup]
+backend-check	Set up job	2026-11-21T14:21:31.8452992Z ##[group]Operating System
+backend-check	Set up job	2026-11-21T14:21:31.8453645Z Ubuntu
+backend-check	Set up job	2026-11-21T14:21:31.8454231Z 26.04.1
+backend-check	Set up job	2026-11-21T14:21:31.8454746Z LTS
+backend-check	Set up job	2026-11-21T14:21:31.8455228Z ##[endgroup]
+backend-check	Set up job	2026-11-21T14:21:31.8456053Z ##[group]Runner Image
+backend-check	Set up job	2026-11-21T14:21:31.8456646Z Image: ubuntu-26.04
+backend-check	Set up job	2026-11-21T14:21:31.8457225Z Version: 20261116.202.1
+backend-check	Set up job	2026-11-21T14:21:31.8458312Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261116.202/images/ubuntu/Ubuntu2604-Readme.md
+backend-check	Set up job	2026-11-21T14:21:31.8460123Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261116.202
+backend-check	Set up job	2026-11-21T14:21:31.8461094Z ##[endgroup]
+backend-check	Set up job	2026-11-21T14:21:31.8462331Z ##[group]GITHUB_TOKEN Permissions
+backend-check	Set up job	2026-11-21T14:21:31.8464162Z Contents: read
+backend-check	Set up job	2026-11-21T14:21:31.8465265Z Metadata: read
+backend-check	Set up job	2026-11-21T14:21:31.8466532Z Packages: read
+backend-check	Set up job	2026-11-21T14:21:31.8467420Z ##[endgroup]
+backend-check	Set up job	2026-11-21T14:21:31.8469674Z Secret source: Actions
+backend-check	Set up job	2026-11-21T14:21:31.8470643Z Cache mode: write
+backend-check	Set up job	2026-11-21T14:21:31.8471415Z Prepare workflow directory
+backend-check	Set up job	2026-11-21T14:21:31.8823429Z Prepare all required actions
+backend-check	Set up job	2026-11-21T14:21:31.8872130Z Getting action download info
+backend-check	Set up job	2026-11-21T14:21:32.0889606Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+backend-check	Set up job	2026-11-21T14:21:32.2307522Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+backend-check	Set up job	2026-11-21T14:21:32.4187429Z Complete job name: backend-check
+backend-check	Checkout repository	﻿2026-11-21T14:21:32.5075094Z ##[group]Run actions/checkout@v4
+backend-check	Checkout repository	2026-11-21T14:21:32.5076213Z with:
+backend-check	Checkout repository	2026-11-21T14:21:32.5076848Z   repository: Abhishek-Singh189/xrwvm-fullstack-developer-capstone
+backend-check	Checkout repository	2026-11-21T14:21:32.5080809Z   token: ***
+backend-check	Checkout repository	2026-11-21T14:21:32.5081263Z   ssh-strict: true
+backend-check	Checkout repository	2026-11-21T14:21:32.5081705Z   ssh-user: git
+backend-check	Checkout repository	2026-11-21T14:21:32.5082153Z   persist-credentials: true
+backend-check	Checkout repository	2026-11-21T14:21:32.5082644Z   clean: true
+backend-check	Checkout repository	2026-11-21T14:21:32.5083089Z   sparse-checkout-cone-mode: true
+backend-check	Checkout repository	2026-11-21T14:21:32.5083617Z   fetch-depth: 1
+backend-check	Checkout repository	2026-11-21T14:21:32.5084049Z   fetch-tags: false
+backend-check	Checkout repository	2026-11-21T14:21:32.5084497Z   show-progress: true
+backend-check	Checkout repository	2026-11-21T14:21:32.5084945Z   lfs: false
+backend-check	Checkout repository	2026-11-21T14:21:32.5085570Z   submodules: false
+backend-check	Checkout repository	2026-11-21T14:21:32.5086036Z   set-safe-directory: true
+backend-check	Checkout repository	2026-11-21T14:21:32.5086549Z   allow-unsafe-pr-checkout: false
+backend-check	Checkout repository	2026-11-21T14:21:32.5087416Z ##[endgroup]
+backend-check	Checkout repository	2026-11-21T14:21:32.9421390Z Syncing repository: Abhishek-Singh189/xrwvm-fullstack-developer-capstone
+backend-check	Checkout repository	2026-11-21T14:21:32.9423754Z ##[group]Getting Git version info
+backend-check	Checkout repository	2026-11-21T14:21:32.9425117Z Working directory is '/home/runner/work/xrwvm-fullstack-developer-capstone/xrwvm-fullstack-developer-capstone'
+backend-check	Checkout repository	2026-11-21T14:21:32.9426903Z [command]/usr/bin/git version
+backend-check	Checkout repository	2026-11-21T14:21:32.9539222Z git version 2.56.1
+backend-check	Checkout repository	2026-11-21T14:21:32.9562720Z ##[endgroup]
+backend-check	Checkout repository	2026-11-21T14:21:32.9581878Z Temporarily overriding HOME='/home/runner/work/_temp/d7d58916-5942-464b-b5ce-08aaa9a844e3' before making global git config changes
+backend-check	Checkout repository	2026-11-21T14:21:32.9585912Z Adding repository directory to the temporary git global config as a safe directory
+backend-check	Checkout repository	2026-11-21T14:21:32.9590148Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/xrwvm-fullstack-developer-capstone/xrwvm-fullstack-developer-capstone
+backend-check	Checkout repository	2026-11-21T14:21:32.9659105Z Deleting the contents of '/home/runner/work/xrwvm-fullstack-developer-capstone/xrwvm-fullstack-developer-capstone'
+backend-check	Checkout repository	2026-11-21T14:21:32.9662414Z ##[group]Initializing the repository
+backend-check	Checkout repository	2026-11-21T14:21:32.9668765Z [command]/usr/bin/git init /home/runner/work/xrwvm-fullstack-developer-capstone/xrwvm-fullstack-developer-capstone
+backend-check	Checkout repository	2026-11-21T14:21:32.9774042Z hint: Using 'master' as the name for the initial branch. This default branch name
+backend-check	Checkout repository	2026-11-21T14:21:32.9775870Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+backend-check	Checkout repository	2026-11-21T14:21:32.9777249Z hint: to use in all of your new repositories, which will suppress this warning,
+backend-check	Checkout repository	2026-11-21T14:21:32.9778394Z hint: call:
+backend-check	Checkout repository	2026-11-21T14:21:32.9779066Z hint:
+backend-check	Checkout repository	2026-11-21T14:21:32.9779728Z hint: 	git config --global init.defaultBranch <name>
+backend-check	Checkout repository	2026-11-21T14:21:32.9780653Z hint:
+backend-check	Checkout repository	2026-11-21T14:21:32.9781902Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+backend-check	Checkout repository	2026-11-21T14:21:32.9783738Z hint: 'development'. The just-created branch can be renamed via this command:
+backend-check	Checkout repository	2026-11-21T14:21:32.9785246Z hint:
+backend-check	Checkout repository	2026-11-21T14:21:32.9786363Z hint: 	git branch -m <name>
+backend-check	Checkout repository	2026-11-21T14:21:32.9787494Z hint:
+backend-check	Checkout repository	2026-11-21T14:21:32.9788872Z hint: Disable this message with "git config set advice.defaultBranchName false"
+backend-check	Checkout repository	2026-11-21T14:21:32.9792064Z Initialized empty Git repository in /home/runner/work/xrwvm-fullstack-developer-capstone/xrwvm-fullstack-developer-capstone/.git/
+backend-check	Checkout repository	2026-11-21T14:21:32.9802428Z [command]/usr/bin/git remote add origin https://github.com/Abhishek-Singh189/xrwvm-fullstack-developer-capstone
+backend-check	Checkout repository	2026-11-21T14:21:32.9861799Z ##[endgroup]
+backend-check	Checkout repository	2026-11-21T14:21:32.9863455Z ##[group]Disabling automatic garbage collection
+backend-check	Checkout repository	2026-11-21T14:21:32.9867390Z [command]/usr/bin/git config --local gc.auto 0
+backend-check	Checkout repository	2026-11-21T14:21:32.9903830Z ##[endgroup]
+backend-check	Checkout repository	2026-11-21T14:21:32.9905169Z ##[group]Setting up auth
+backend-check	Checkout repository	2026-11-21T14:21:32.9911156Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+backend-check	Checkout repository	2026-11-21T14:21:32.9948241Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+backend-check	Checkout repository	2026-11-21T14:21:33.0450770Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+backend-check	Checkout repository	2026-11-21T14:21:33.0490574Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+backend-check	Checkout repository	2026-11-21T14:21:33.0777582Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+backend-check	Checkout repository	2026-11-21T14:21:33.0815719Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+backend-check	Checkout repository	2026-11-21T14:21:33.1092589Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+backend-check	Checkout repository	2026-11-21T14:21:33.1137531Z ##[endgroup]
+backend-check	Checkout repository	2026-11-21T14:21:33.1138945Z ##[group]Fetching the repository
+backend-check	Checkout repository	2026-11-21T14:21:33.1149135Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +bf03e95ab4882edbc7594ffd97122efe9e25b278:refs/remotes/origin/main
+backend-check	Checkout repository	2026-11-21T14:21:33.4626235Z From https://github.com/Abhishek-Singh189/xrwvm-fullstack-developer-capstone
+backend-check	Checkout repository	2026-11-21T14:21:33.4630025Z  * [new ref]         bf03e95ab4882edbc7594ffd97122efe9e25b278 -> origin/main
+backend-check	Checkout repository	2026-11-21T14:21:33.4636977Z ##[endgroup]
+backend-check	Checkout repository	2026-11-21T14:21:33.4639615Z ##[group]Determining the checkout info
+backend-check	Checkout repository	2026-11-21T14:21:33.4642725Z ##[endgroup]
+backend-check	Checkout repository	2026-11-21T14:21:33.4644977Z [command]/usr/bin/git sparse-checkout disable
+backend-check	Checkout repository	2026-11-21T14:21:33.4700910Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+backend-check	Checkout repository	2026-11-21T14:21:33.4734568Z ##[group]Checking out the ref
+backend-check	Checkout repository	2026-11-21T14:21:33.4739715Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+backend-check	Checkout repository	2026-11-21T14:21:33.5001325Z Switched to a new branch 'main'
+backend-check	Checkout repository	2026-11-21T14:21:33.5007580Z branch 'main' set up to track 'origin/main'.
+backend-check	Checkout repository	2026-11-21T14:21:33.5017703Z ##[endgroup]
+backend-check	Checkout repository	2026-11-21T14:21:33.5065984Z [command]/usr/bin/git log -1 --format=%H
+backend-check	Checkout repository	2026-11-21T14:21:33.5090990Z bf03e95ab4882edbc7594ffd97122efe9e25b278
+backend-check	Set up Python	﻿2026-11-21T14:21:33.5496326Z ##[group]Run actions/setup-python@v5
+backend-check	Set up Python	2026-11-21T14:21:33.5497646Z with:
+backend-check	Set up Python	2026-11-21T14:21:33.5498566Z   python-version: 3.11
+backend-check	Set up Python	2026-11-21T14:21:33.5499627Z   check-latest: false
+backend-check	Set up Python	2026-11-21T14:21:33.5509569Z   token: ***
+backend-check	Set up Python	2026-11-21T14:21:33.5510554Z   update-environment: true
+backend-check	Set up Python	2026-11-21T14:21:33.5511696Z   allow-prereleases: false
+backend-check	Set up Python	2026-11-21T14:21:33.5512818Z   freethreaded: false
+backend-check	Set up Python	2026-11-21T14:21:33.5513821Z ##[endgroup]
+backend-check	Set up Python	2026-11-21T14:21:33.6995860Z ##[group]Installed versions
+backend-check	Set up Python	2026-11-21T14:21:33.7147452Z (node:2373) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+backend-check	Set up Python	2026-11-21T14:21:33.7150805Z (Use `node --trace-deprecation ...` to show where the warning was created)
+backend-check	Set up Python	2026-11-21T14:21:33.7153873Z Successfully set up CPython (3.11.18)
+backend-check	Set up Python	2026-11-21T14:21:33.7161842Z ##[endgroup]
+backend-check	Install Django dependencies	﻿2026-11-21T14:21:33.7386027Z ##[group]Run python -m pip install --upgrade pip
+backend-check	Install Django dependencies	2026-11-21T14:21:33.7388582Z ^[[36;1mpython -m pip install --upgrade pip^[[0m
+backend-check	Install Django dependencies	2026-11-21T14:21:33.7391003Z ^[[36;1mpip install Django requests python-dotenv^[[0m
+backend-check	Install Django dependencies	2026-11-21T14:21:33.7447083Z shell: /usr/bin/bash -e {0}
+backend-check	Install Django dependencies	2026-11-21T14:21:33.7448206Z env:
+backend-check	Install Django dependencies	2026-11-21T14:21:33.7449334Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.18/x64
+backend-check	Install Django dependencies	2026-11-21T14:21:33.7451218Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib/pkgconfig
+backend-check	Install Django dependencies	2026-11-21T14:21:33.7453110Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+backend-check	Install Django dependencies	2026-11-21T14:21:33.7454817Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+backend-check	Install Django dependencies	2026-11-21T14:21:33.7456834Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+backend-check	Install Django dependencies	2026-11-21T14:21:33.7458586Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib
+backend-check	Install Django dependencies	2026-11-21T14:21:33.7460059Z ##[endgroup]
+backend-check	Install Django dependencies	2026-11-21T14:21:34.4313998Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages (26.3)
+backend-check	Install Django dependencies	2026-11-21T14:21:34.9980646Z Collecting Django
+backend-check	Install Django dependencies	2026-11-21T14:21:35.0241055Z   Downloading django-5.2.19-py3-none-any.whl.metadata (4.1 kB)
+backend-check	Install Django dependencies	2026-11-21T14:21:35.0480046Z Collecting requests
+backend-check	Install Django dependencies	2026-11-21T14:21:35.0524092Z   Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+backend-check	Install Django dependencies	2026-11-21T14:21:35.0689942Z Collecting python-dotenv
+backend-check	Install Django dependencies	2026-11-21T14:21:35.0731051Z   Downloading python_dotenv-1.2.4-py3-none-any.whl.metadata (29 kB)
+backend-check	Install Django dependencies	2026-11-21T14:21:35.0910526Z Collecting asgiref>=3.8.1 (from Django)
+backend-check	Install Django dependencies	2026-11-21T14:21:35.0951494Z   Downloading asgiref-3.13.0-py3-none-any.whl.metadata (12 kB)
+backend-check	Install Django dependencies	2026-11-21T14:21:35.1086534Z Collecting sqlparse>=0.3.1 (from Django)
+backend-check	Install Django dependencies	2026-11-21T14:21:35.1125557Z   Downloading sqlparse-0.6.1-py3-none-any.whl.metadata (6.9 kB)
+backend-check	Install Django dependencies	2026-11-21T14:21:35.2288335Z Collecting charset_normalizer<4,>=2 (from requests)
+backend-check	Install Django dependencies	2026-11-21T14:21:35.2330430Z   Downloading charset_normalizer-3.5.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+backend-check	Install Django dependencies	2026-11-21T14:21:35.2492217Z Collecting idna<4,>=2.5 (from requests)
+backend-check	Install Django dependencies	2026-11-21T14:21:35.2535862Z   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+backend-check	Install Django dependencies	2026-11-21T14:21:35.2734070Z Collecting urllib3<3,>=1.26 (from requests)
+backend-check	Install Django dependencies	2026-11-21T14:21:35.2779108Z   Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+backend-check	Install Django dependencies	2026-11-21T14:21:35.2949850Z Collecting certifi>=2023.5.7 (from requests)
+backend-check	Install Django dependencies	2026-11-21T14:21:35.2990578Z   Downloading certifi-2026.11.20-py3-none-any.whl.metadata (2.5 kB)
+backend-check	Install Django dependencies	2026-11-21T14:21:35.3084403Z Downloading django-5.2.19-py3-none-any.whl (8.3 MB)
+backend-check	Install Django dependencies	2026-11-21T14:21:35.3386029Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.3/8.3 MB 316.3 MB/s  0:00:00
+backend-check	Install Django dependencies	2026-11-21T14:21:35.3424588Z Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+backend-check	Install Django dependencies	2026-11-21T14:21:35.3483711Z Downloading charset_normalizer-3.5.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (269 kB)
+backend-check	Install Django dependencies	2026-11-21T14:21:35.3546153Z Downloading idna-3.20-py3-none-any.whl (69 kB)
+backend-check	Install Django dependencies	2026-11-21T14:21:35.3602597Z Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+backend-check	Install Django dependencies	2026-11-21T14:21:35.3660860Z Downloading python_dotenv-1.2.4-py3-none-any.whl (23 kB)
+backend-check	Install Django dependencies	2026-11-21T14:21:35.3713744Z Downloading asgiref-3.13.0-py3-none-any.whl (27 kB)
+backend-check	Install Django dependencies	2026-11-21T14:21:35.3766524Z Downloading certifi-2026.11.20-py3-none-any.whl (127 kB)
+backend-check	Install Django dependencies	2026-11-21T14:21:35.3822070Z Downloading sqlparse-0.6.1-py3-none-any.whl (51 kB)
+backend-check	Install Django dependencies	2026-11-21T14:21:35.4742205Z Installing collected packages: urllib3, sqlparse, python-dotenv, idna, charset_normalizer, certifi, asgiref, requests, Django
+backend-check	Install Django dependencies	2026-11-21T14:21:37.3554893Z 
+backend-check	Install Django dependencies	2026-11-21T14:21:37.3570618Z Successfully installed Django-5.2.19 asgiref-3.13.0 certifi-2026.11.20 charset_normalizer-3.5.2 idna-3.20 python-dotenv-1.2.4 requests-2.34.2 sqlparse-0.6.1 urllib3-2.8.0
+backend-check	Check Django configuration	﻿2026-11-21T14:21:37.4210902Z ##[group]Run python manage.py check
+backend-check	Check Django configuration	2026-11-21T14:21:37.4211245Z ^[[36;1mpython manage.py check^[[0m
+backend-check	Check Django configuration	2026-11-21T14:21:37.4247005Z shell: /usr/bin/bash -e {0}
+backend-check	Check Django configuration	2026-11-21T14:21:37.4247263Z env:
+backend-check	Check Django configuration	2026-11-21T14:21:37.4247532Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.18/x64
+backend-check	Check Django configuration	2026-11-21T14:21:37.4247986Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib/pkgconfig
+backend-check	Check Django configuration	2026-11-21T14:21:37.4248442Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+backend-check	Check Django configuration	2026-11-21T14:21:37.4248824Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+backend-check	Check Django configuration	2026-11-21T14:21:37.4249205Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+backend-check	Check Django configuration	2026-11-21T14:21:37.4249590Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib
+backend-check	Check Django configuration	2026-11-21T14:21:37.4249918Z ##[endgroup]
+backend-check	Check Django configuration	2026-11-21T14:21:37.9717033Z System check identified no issues (0 silenced).
+backend-check	Post Set up Python	﻿2026-11-21T14:21:38.0366116Z Post job cleanup.
+backend-check	Post Set up Python	2026-11-21T14:21:38.1596329Z (node:2436) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+backend-check	Post Set up Python	2026-11-21T14:21:38.1597295Z (Use `node --trace-deprecation ...` to show where the warning was created)
+backend-check	Post Checkout repository	﻿2026-11-21T14:21:38.1866136Z Post job cleanup.
+backend-check	Post Checkout repository	2026-11-21T14:21:38.2761614Z [command]/usr/bin/git version
+backend-check	Post Checkout repository	2026-11-21T14:21:38.2807471Z git version 2.56.1
+backend-check	Post Checkout repository	2026-11-21T14:21:38.2852414Z Temporarily overriding HOME='/home/runner/work/_temp/1154469b-5a3e-4bf6-9051-af6308d40c28' before making global git config changes
+backend-check	Post Checkout repository	2026-11-21T14:21:38.2854182Z Adding repository directory to the temporary git global config as a safe directory
+backend-check	Post Checkout repository	2026-11-21T14:21:38.2859413Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/xrwvm-fullstack-developer-capstone/xrwvm-fullstack-developer-capstone
+backend-check	Post Checkout repository	2026-11-21T14:21:38.2907896Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+backend-check	Post Checkout repository	2026-11-21T14:21:38.2981452Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+backend-check	Post Checkout repository	2026-11-21T14:21:38.3326588Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+backend-check	Post Checkout repository	2026-11-21T14:21:38.3346511Z http.https://github.com/.extraheader
+backend-check	Post Checkout repository	2026-11-21T14:21:38.3359267Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+backend-check	Post Checkout repository	2026-11-21T14:21:38.3400550Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+backend-check	Post Checkout repository	2026-11-21T14:21:38.3709737Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+backend-check	Post Checkout repository	2026-11-21T14:21:38.3746677Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+backend-check	Complete job	﻿2026-11-21T14:21:38.4173446Z Cleaning up orphan processes
+backend-check	Complete job	2026-11-21T14:21:38.4567757Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+frontend-build	Set up job	﻿2026-11-21T14:21:32.6141593Z Current runner version: '2.338.2'
+frontend-build	Set up job	2026-11-21T14:21:32.6168709Z ##[group]Runner Image Provisioner
+frontend-build	Set up job	2026-11-21T14:21:32.6169685Z Hosted Compute Agent
+frontend-build	Set up job	2026-11-21T14:21:32.6170365Z Version: 20261111.635
+frontend-build	Set up job	2026-11-21T14:21:32.6171011Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+frontend-build	Set up job	2026-11-21T14:21:32.6171831Z Build Date: 2026-11-11T01:49:01Z
+frontend-build	Set up job	2026-11-21T14:21:32.6172526Z Worker ID: {20722e0e-4daa-4e5f-a9a0-bcb045858372}
+frontend-build	Set up job	2026-11-21T14:21:32.6173313Z Region: westus
+frontend-build	Set up job	2026-11-21T14:21:32.6173878Z Cloud: Azure
+frontend-build	Set up job	2026-11-21T14:21:32.6174417Z ##[endgroup]
+frontend-build	Set up job	2026-11-21T14:21:32.6175917Z ##[group]Operating System
+frontend-build	Set up job	2026-11-21T14:21:32.6176585Z Ubuntu
+frontend-build	Set up job	2026-11-21T14:21:32.6177085Z 26.04.1
+frontend-build	Set up job	2026-11-21T14:21:32.6177736Z LTS
+frontend-build	Set up job	2026-11-21T14:21:32.6178608Z ##[endgroup]
+frontend-build	Set up job	2026-11-21T14:21:32.6179298Z ##[group]Runner Image
+frontend-build	Set up job	2026-11-21T14:21:32.6179902Z Image: ubuntu-26.04
+frontend-build	Set up job	2026-11-21T14:21:32.6180485Z Version: 20261116.202.1
+frontend-build	Set up job	2026-11-21T14:21:32.6181610Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261116.202/images/ubuntu/Ubuntu2604-Readme.md
+frontend-build	Set up job	2026-11-21T14:21:32.6183417Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261116.202
+frontend-build	Set up job	2026-11-21T14:21:32.6184396Z ##[endgroup]
+frontend-build	Set up job	2026-11-21T14:21:32.6185601Z ##[group]GITHUB_TOKEN Permissions
+frontend-build	Set up job	2026-11-21T14:21:32.6187770Z Contents: read
+frontend-build	Set up job	2026-11-21T14:21:32.6188720Z Metadata: read
+frontend-build	Set up job	2026-11-21T14:21:32.6189768Z Packages: read
+frontend-build	Set up job	2026-11-21T14:21:32.6190446Z ##[endgroup]
+frontend-build	Set up job	2026-11-21T14:21:32.6192570Z Secret source: Actions
+frontend-build	Set up job	2026-11-21T14:21:32.6193677Z Cache mode: write
+frontend-build	Set up job	2026-11-21T14:21:32.6194398Z Prepare workflow directory
+frontend-build	Set up job	2026-11-21T14:21:32.6533894Z Prepare all required actions
+frontend-build	Set up job	2026-11-21T14:21:32.6584394Z Getting action download info
+frontend-build	Set up job	2026-11-21T14:21:32.9803747Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+frontend-build	Set up job	2026-11-21T14:21:33.0740727Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+frontend-build	Set up job	2026-11-21T14:21:33.2455729Z Complete job name: frontend-build
+frontend-build	Checkout repository	﻿2026-11-21T14:21:33.3317233Z ##[group]Run actions/checkout@v4
+frontend-build	Checkout repository	2026-11-21T14:21:33.3318331Z with:
+frontend-build	Checkout repository	2026-11-21T14:21:33.3318965Z   repository: Abhishek-Singh189/xrwvm-fullstack-developer-capstone
+frontend-build	Checkout repository	2026-11-21T14:21:33.3323161Z   token: ***
+frontend-build	Checkout repository	2026-11-21T14:21:33.3323592Z   ssh-strict: true
+frontend-build	Checkout repository	2026-11-21T14:21:33.3324029Z   ssh-user: git
+frontend-build	Checkout repository	2026-11-21T14:21:33.3324468Z   persist-credentials: true
+frontend-build	Checkout repository	2026-11-21T14:21:33.3324951Z   clean: true
+frontend-build	Checkout repository	2026-11-21T14:21:33.3325382Z   sparse-checkout-cone-mode: true
+frontend-build	Checkout repository	2026-11-21T14:21:33.3326001Z   fetch-depth: 1
+frontend-build	Checkout repository	2026-11-21T14:21:33.3326436Z   fetch-tags: false
+frontend-build	Checkout repository	2026-11-21T14:21:33.3326886Z   show-progress: true
+frontend-build	Checkout repository	2026-11-21T14:21:33.3327332Z   lfs: false
+frontend-build	Checkout repository	2026-11-21T14:21:33.3327727Z   submodules: false
+frontend-build	Checkout repository	2026-11-21T14:21:33.3328295Z   set-safe-directory: true
+frontend-build	Checkout repository	2026-11-21T14:21:33.3328800Z   allow-unsafe-pr-checkout: false
+frontend-build	Checkout repository	2026-11-21T14:21:33.3329575Z ##[endgroup]
+frontend-build	Checkout repository	2026-11-21T14:21:33.6150051Z Syncing repository: Abhishek-Singh189/xrwvm-fullstack-developer-capstone
+frontend-build	Checkout repository	2026-11-21T14:21:33.6153027Z ##[group]Getting Git version info
+frontend-build	Checkout repository	2026-11-21T14:21:33.6155405Z Working directory is '/home/runner/work/xrwvm-fullstack-developer-capstone/xrwvm-fullstack-developer-capstone'
+frontend-build	Checkout repository	2026-11-21T14:21:33.6158579Z [command]/usr/bin/git version
+frontend-build	Checkout repository	2026-11-21T14:21:33.6169842Z git version 2.56.1
+frontend-build	Checkout repository	2026-11-21T14:21:33.6193189Z ##[endgroup]
+frontend-build	Checkout repository	2026-11-21T14:21:33.6208861Z Temporarily overriding HOME='/home/runner/work/_temp/dfc57d00-a634-484c-8146-965240497566' before making global git config changes
+frontend-build	Checkout repository	2026-11-21T14:21:33.6211463Z Adding repository directory to the temporary git global config as a safe directory
+frontend-build	Checkout repository	2026-11-21T14:21:33.6214745Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/xrwvm-fullstack-developer-capstone/xrwvm-fullstack-developer-capstone
+frontend-build	Checkout repository	2026-11-21T14:21:33.6290279Z Deleting the contents of '/home/runner/work/xrwvm-fullstack-developer-capstone/xrwvm-fullstack-developer-capstone'
+frontend-build	Checkout repository	2026-11-21T14:21:33.6294033Z ##[group]Initializing the repository
+frontend-build	Checkout repository	2026-11-21T14:21:33.6299644Z [command]/usr/bin/git init /home/runner/work/xrwvm-fullstack-developer-capstone/xrwvm-fullstack-developer-capstone
+frontend-build	Checkout repository	2026-11-21T14:21:33.6419708Z hint: Using 'master' as the name for the initial branch. This default branch name
+frontend-build	Checkout repository	2026-11-21T14:21:33.6422109Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+frontend-build	Checkout repository	2026-11-21T14:21:33.6423373Z hint: to use in all of your new repositories, which will suppress this warning,
+frontend-build	Checkout repository	2026-11-21T14:21:33.6424310Z hint: call:
+frontend-build	Checkout repository	2026-11-21T14:21:33.6425217Z hint:
+frontend-build	Checkout repository	2026-11-21T14:21:33.6426018Z hint: 	git config --global init.defaultBranch <name>
+frontend-build	Checkout repository	2026-11-21T14:21:33.6426805Z hint:
+frontend-build	Checkout repository	2026-11-21T14:21:33.6427559Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+frontend-build	Checkout repository	2026-11-21T14:21:33.6429286Z hint: 'development'. The just-created branch can be renamed via this command:
+frontend-build	Checkout repository	2026-11-21T14:21:33.6430245Z hint:
+frontend-build	Checkout repository	2026-11-21T14:21:33.6431050Z hint: 	git branch -m <name>
+frontend-build	Checkout repository	2026-11-21T14:21:33.6432315Z hint:
+frontend-build	Checkout repository	2026-11-21T14:21:33.6433719Z hint: Disable this message with "git config set advice.defaultBranchName false"
+frontend-build	Checkout repository	2026-11-21T14:21:33.6437483Z Initialized empty Git repository in /home/runner/work/xrwvm-fullstack-developer-capstone/xrwvm-fullstack-developer-capstone/.git/
+frontend-build	Checkout repository	2026-11-21T14:21:33.6451279Z [command]/usr/bin/git remote add origin https://github.com/Abhishek-Singh189/xrwvm-fullstack-developer-capstone
+frontend-build	Checkout repository	2026-11-21T14:21:33.6510551Z ##[endgroup]
+frontend-build	Checkout repository	2026-11-21T14:21:33.6512380Z ##[group]Disabling automatic garbage collection
+frontend-build	Checkout repository	2026-11-21T14:21:33.6515489Z [command]/usr/bin/git config --local gc.auto 0
+frontend-build	Checkout repository	2026-11-21T14:21:33.6552383Z ##[endgroup]
+frontend-build	Checkout repository	2026-11-21T14:21:33.6553951Z ##[group]Setting up auth
+frontend-build	Checkout repository	2026-11-21T14:21:33.6561048Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+frontend-build	Checkout repository	2026-11-21T14:21:33.6599750Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+frontend-build	Checkout repository	2026-11-21T14:21:33.7098602Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+frontend-build	Checkout repository	2026-11-21T14:21:33.7140878Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+frontend-build	Checkout repository	2026-11-21T14:21:33.7455745Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+frontend-build	Checkout repository	2026-11-21T14:21:33.7491701Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+frontend-build	Checkout repository	2026-11-21T14:21:33.7760551Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+frontend-build	Checkout repository	2026-11-21T14:21:33.7800405Z ##[endgroup]
+frontend-build	Checkout repository	2026-11-21T14:21:33.7801437Z ##[group]Fetching the repository
+frontend-build	Checkout repository	2026-11-21T14:21:33.7809915Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +bf03e95ab4882edbc7594ffd97122efe9e25b278:refs/remotes/origin/main
+frontend-build	Checkout repository	2026-11-21T14:21:34.2846986Z From https://github.com/Abhishek-Singh189/xrwvm-fullstack-developer-capstone
+frontend-build	Checkout repository	2026-11-21T14:21:34.2849422Z  * [new ref]         bf03e95ab4882edbc7594ffd97122efe9e25b278 -> origin/main
+frontend-build	Checkout repository	2026-11-21T14:21:34.2853936Z ##[endgroup]
+frontend-build	Checkout repository	2026-11-21T14:21:34.2855553Z ##[group]Determining the checkout info
+frontend-build	Checkout repository	2026-11-21T14:21:34.2857275Z ##[endgroup]
+frontend-build	Checkout repository	2026-11-21T14:21:34.2863478Z [command]/usr/bin/git sparse-checkout disable
+frontend-build	Checkout repository	2026-11-21T14:21:34.2915108Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+frontend-build	Checkout repository	2026-11-21T14:21:34.2945003Z ##[group]Checking out the ref
+frontend-build	Checkout repository	2026-11-21T14:21:34.2949476Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+frontend-build	Checkout repository	2026-11-21T14:21:34.3212220Z Switched to a new branch 'main'
+frontend-build	Checkout repository	2026-11-21T14:21:34.3217620Z branch 'main' set up to track 'origin/main'.
+frontend-build	Checkout repository	2026-11-21T14:21:34.3225825Z ##[endgroup]
+frontend-build	Checkout repository	2026-11-21T14:21:34.3271702Z [command]/usr/bin/git log -1 --format=%H
+frontend-build	Checkout repository	2026-11-21T14:21:34.3296059Z bf03e95ab4882edbc7594ffd97122efe9e25b278
+frontend-build	Set up Node.js	﻿2026-11-21T14:21:34.3676398Z ##[group]Run actions/setup-node@v4
+frontend-build	Set up Node.js	2026-11-21T14:21:34.3677542Z with:
+frontend-build	Set up Node.js	2026-11-21T14:21:34.3678464Z   node-version: 20
+frontend-build	Set up Node.js	2026-11-21T14:21:34.3679326Z   always-auth: false
+frontend-build	Set up Node.js	2026-11-21T14:21:34.3680216Z   check-latest: false
+frontend-build	Set up Node.js	2026-11-21T14:21:34.3691249Z   token: ***
+frontend-build	Set up Node.js	2026-11-21T14:21:34.3692059Z ##[endgroup]
+frontend-build	Set up Node.js	2026-11-21T14:21:34.5149335Z Attempting to download 20...
+frontend-build	Set up Node.js	2026-11-21T14:21:34.5333018Z (node:2415) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+frontend-build	Set up Node.js	2026-11-21T14:21:34.5337604Z (Use `node --trace-deprecation ...` to show where the warning was created)
+frontend-build	Set up Node.js	2026-11-21T14:21:35.2049125Z Acquiring 20.20.2 - x64 from https://github.com/actions/node-versions/releases/download/20.20.2-23521894959/node-20.20.2-linux-x64.tar.gz
+frontend-build	Set up Node.js	2026-11-21T14:21:35.6105951Z Extracting ...
+frontend-build	Set up Node.js	2026-11-21T14:21:35.6224696Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/07be0d68-75bb-4348-b038-2f7f1d42f48e -f /home/runner/work/_temp/ce2bc1c7-d97d-4f70-8166-71d93961a036
+frontend-build	Set up Node.js	2026-11-21T14:21:36.3227023Z Adding to the cache ...
+frontend-build	Set up Node.js	2026-11-21T14:21:37.8713328Z ##[group]Environment details
+frontend-build	Set up Node.js	2026-11-21T14:21:38.0995387Z node: v20.20.2
+frontend-build	Set up Node.js	2026-11-21T14:21:38.0996205Z npm: 10.8.2
+frontend-build	Set up Node.js	2026-11-21T14:21:38.0996547Z yarn: 1.22.22
+frontend-build	Set up Node.js	2026-11-21T14:21:38.0997277Z ##[endgroup]
+frontend-build	Install frontend dependencies	﻿2026-11-21T14:21:38.1195841Z ##[group]Run npm ci
+frontend-build	Install frontend dependencies	2026-11-21T14:21:38.1196165Z ^[[36;1mnpm ci^[[0m
+frontend-build	Install frontend dependencies	2026-11-21T14:21:38.1235475Z shell: /usr/bin/bash -e {0}
+frontend-build	Install frontend dependencies	2026-11-21T14:21:38.1235780Z ##[endgroup]
+frontend-build	Install frontend dependencies	2026-11-21T14:21:42.2297226Z npm warn deprecated w3c-hr-time@1.0.2: Use your platform's native performance.now() and performance.timeOrigin.
+frontend-build	Install frontend dependencies	2026-11-21T14:21:42.4351314Z npm warn deprecated stable@0.1.8: Modern JS already guarantees Array#sort() is a stable sort, so this library is deprecated. See the compatibility table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility
+frontend-build	Install frontend dependencies	2026-11-21T14:21:42.4622266Z npm warn deprecated sourcemap-codec@1.4.8: Please use @jridgewell/sourcemap-codec instead
+frontend-build	Install frontend dependencies	2026-11-21T14:21:42.5870104Z npm warn deprecated rollup-plugin-terser@7.0.2: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-terser
+frontend-build	Install frontend dependencies	2026-11-21T14:21:43.2282000Z npm warn deprecated workbox-cacheable-response@6.6.0: workbox-background-sync@6.6.0
+frontend-build	Install frontend dependencies	2026-11-21T14:21:45.2378599Z npm warn deprecated svgo@1.3.2: This SVGO version is no longer supported. Upgrade to v2.x.x.
+frontend-build	Install frontend dependencies	2026-11-21T14:21:45.9086630Z npm warn deprecated @babel/plugin-proposal-private-methods@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-private-methods instead.
+frontend-build	Install frontend dependencies	2026-11-21T14:21:45.9090611Z npm warn deprecated @babel/plugin-proposal-private-property-in-object@7.21.11: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-private-property-in-object instead.
+frontend-build	Install frontend dependencies	2026-11-21T14:21:45.9094390Z npm warn deprecated @babel/plugin-proposal-optional-chaining@7.21.0: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-optional-chaining instead.
+frontend-build	Install frontend dependencies	2026-11-21T14:21:45.9355299Z npm warn deprecated @babel/plugin-proposal-class-properties@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-class-properties instead.
+frontend-build	Install frontend dependencies	2026-11-21T14:21:45.9359348Z npm warn deprecated @babel/plugin-proposal-nullish-coalescing-operator@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-nullish-coalescing-operator instead.
+frontend-build	Install frontend dependencies	2026-11-21T14:21:45.9363396Z npm warn deprecated @babel/plugin-proposal-numeric-separator@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-numeric-separator instead.
+frontend-build	Install frontend dependencies	2026-11-21T14:21:56.1794077Z 
+frontend-build	Install frontend dependencies	2026-11-21T14:21:56.1794840Z added 1534 packages, and audited 1535 packages in 18s
+frontend-build	Install frontend dependencies	2026-11-21T14:21:56.1795203Z 
+frontend-build	Install frontend dependencies	2026-11-21T14:21:56.1795381Z 246 packages are looking for funding
+frontend-build	Install frontend dependencies	2026-11-21T14:21:56.1795751Z   run `npm fund` for details
+frontend-build	Install frontend dependencies	2026-11-21T14:21:56.2866903Z 
+frontend-build	Install frontend dependencies	2026-11-21T14:21:56.2868220Z 75 vulnerabilities (14 low, 19 moderate, 38 high, 4 critical)
+frontend-build	Install frontend dependencies	2026-11-21T14:21:56.2868771Z 
+frontend-build	Install frontend dependencies	2026-11-21T14:21:56.2869123Z To address issues that do not require attention, run:
+frontend-build	Install frontend dependencies	2026-11-21T14:21:56.2869627Z   npm audit fix
+frontend-build	Install frontend dependencies	2026-11-21T14:21:56.2869822Z 
+frontend-build	Install frontend dependencies	2026-11-21T14:21:56.2870151Z To address all issues (including breaking changes), run:
+frontend-build	Install frontend dependencies	2026-11-21T14:21:56.2870664Z   npm audit fix --force
+frontend-build	Install frontend dependencies	2026-11-21T14:21:56.2870887Z 
+frontend-build	Install frontend dependencies	2026-11-21T14:21:56.2871068Z Run `npm audit` for details.
+frontend-build	Build React application	﻿2026-11-21T14:21:56.3317731Z ##[group]Run CI=false npm run build
+frontend-build	Build React application	2026-11-21T14:21:56.3318467Z ^[[36;1mCI=false npm run build^[[0m
+frontend-build	Build React application	2026-11-21T14:21:56.3354649Z shell: /usr/bin/bash -e {0}
+frontend-build	Build React application	2026-11-21T14:21:56.3354927Z ##[endgroup]
+frontend-build	Build React application	2026-11-21T14:21:56.6191854Z 
+frontend-build	Build React application	2026-11-21T14:21:56.6192773Z > usermgmt@0.1.0 build
+frontend-build	Build React application	2026-11-21T14:21:56.6193359Z > react-scripts build
+frontend-build	Build React application	2026-11-21T14:21:56.6193657Z 
+frontend-build	Build React application	2026-11-21T14:21:57.6429232Z Creating an optimized production build...
+frontend-build	Build React application	2026-11-21T14:21:57.7434183Z Browserslist: caniuse-lite is outdated. Please run:
+frontend-build	Build React application	2026-11-21T14:21:57.7435100Z   npx update-browserslist-db@latest
+frontend-build	Build React application	2026-11-21T14:21:57.7436509Z   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+frontend-build	Build React application	2026-11-21T14:22:03.7590599Z Browserslist: caniuse-lite is outdated. Please run:
+frontend-build	Build React application	2026-11-21T14:22:03.7591297Z   npx update-browserslist-db@latest
+frontend-build	Build React application	2026-11-21T14:22:03.7592330Z   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+frontend-build	Build React application	2026-11-21T14:22:04.8881560Z Compiled with warnings.
+frontend-build	Build React application	2026-11-21T14:22:04.8881960Z 
+frontend-build	Build React application	2026-11-21T14:22:04.8882213Z Warning
+frontend-build	Build React application	2026-11-21T14:22:04.8882979Z (6:27710) autoprefixer: Replace color-adjust to print-color-adjust. The color-adjust shorthand is currently deprecated.
+frontend-build	Build React application	2026-11-21T14:22:04.8883489Z 
+frontend-build	Build React application	2026-11-21T14:22:04.8883668Z [eslint] 
+frontend-build	Build React application	2026-11-21T14:22:04.8883990Z src/components/Dealers/Dealer.jsx
+frontend-build	Build React application	2026-11-21T14:22:04.8884870Z   Line 67:5:  React Hook useEffect has missing dependencies: 'get_dealer', 'get_reviews', and 'post_review'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+frontend-build	Build React application	2026-11-21T14:22:04.8885530Z 
+frontend-build	Build React application	2026-11-21T14:22:04.8885676Z src/components/Dealers/Dealers.jsx
+frontend-build	Build React application	2026-11-21T14:22:04.8886381Z   Line 48:5:  React Hook useEffect has a missing dependency: 'get_dealers'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+frontend-build	Build React application	2026-11-21T14:22:04.8886925Z 
+frontend-build	Build React application	2026-11-21T14:22:04.8887085Z src/components/Dealers/PostReview.jsx
+frontend-build	Build React application	2026-11-21T14:22:04.8888124Z   Line 90:5:  React Hook useEffect has missing dependencies: 'get_cars' and 'get_dealer'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+frontend-build	Build React application	2026-11-21T14:22:04.8889119Z 
+frontend-build	Build React application	2026-11-21T14:22:04.8889523Z Search for the keywords to learn more about each warning.
+frontend-build	Build React application	2026-11-21T14:22:04.8890376Z To ignore, add // eslint-disable-next-line to the line before.
+frontend-build	Build React application	2026-11-21T14:22:04.8890829Z 
+frontend-build	Build React application	2026-11-21T14:22:04.8891024Z File sizes after gzip:
+frontend-build	Build React application	2026-11-21T14:22:04.8891266Z 
+frontend-build	Build React application	2026-11-21T14:22:04.9001068Z   54.68 kB  build/static/js/main.2afa8e8c.js
+frontend-build	Build React application	2026-11-21T14:22:04.9001811Z   23.94 kB  build/static/css/main.d9716fdc.css
+frontend-build	Build React application	2026-11-21T14:22:04.9002100Z 
+frontend-build	Build React application	2026-11-21T14:22:04.9004238Z The project was built assuming it is hosted at /.
+frontend-build	Build React application	2026-11-21T14:22:04.9005536Z You can control this with the homepage field in your package.json.
+frontend-build	Build React application	2026-11-21T14:22:04.9006280Z 
+frontend-build	Build React application	2026-11-21T14:22:04.9006781Z The build folder is ready to be deployed.
+frontend-build	Build React application	2026-11-21T14:22:04.9007638Z You may serve it with a static server:
+frontend-build	Build React application	2026-11-21T14:22:04.9008211Z 
+frontend-build	Build React application	2026-11-21T14:22:04.9009394Z   npm install -g serve
+frontend-build	Build React application	2026-11-21T14:22:04.9010018Z   serve -s build
+frontend-build	Build React application	2026-11-21T14:22:04.9010427Z 
+frontend-build	Build React application	2026-11-21T14:22:04.9011160Z Find out more about deployment here:
+frontend-build	Build React application	2026-11-21T14:22:04.9012015Z 
+frontend-build	Build React application	2026-11-21T14:22:04.9012382Z   https://cra.link/deployment
+frontend-build	Build React application	2026-11-21T14:22:04.9012660Z 
+frontend-build	Build React application	2026-11-21T14:22:04.9505955Z npm notice
+frontend-build	Build React application	2026-11-21T14:22:04.9506755Z npm notice New major version of npm available! 10.8.2 -> 12.2.3
+frontend-build	Build React application	2026-11-21T14:22:04.9508397Z npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.3
+frontend-build	Build React application	2026-11-21T14:22:04.9509567Z npm notice To update run: npm install -g npm@12.2.3
+frontend-build	Build React application	2026-11-21T14:22:04.9510161Z npm notice
+frontend-build	Post Set up Node.js	﻿2026-11-21T14:22:04.9657282Z Post job cleanup.
+frontend-build	Post Set up Node.js	2026-11-21T14:22:05.0867337Z (node:2520) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+frontend-build	Post Set up Node.js	2026-11-21T14:22:05.0868658Z (Use `node --trace-deprecation ...` to show where the warning was created)
+frontend-build	Post Checkout repository	﻿2026-11-21T14:22:05.1093935Z Post job cleanup.
+frontend-build	Post Checkout repository	2026-11-21T14:22:05.1966947Z [command]/usr/bin/git version
+frontend-build	Post Checkout repository	2026-11-21T14:22:05.2012491Z git version 2.56.1
+frontend-build	Post Checkout repository	2026-11-21T14:22:05.2052135Z Temporarily overriding HOME='/home/runner/work/_temp/295bc93b-6623-4d08-849d-7847db5b4f5e' before making global git config changes
+frontend-build	Post Checkout repository	2026-11-21T14:22:05.2053774Z Adding repository directory to the temporary git global config as a safe directory
+frontend-build	Post Checkout repository	2026-11-21T14:22:05.2058780Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/xrwvm-fullstack-developer-capstone/xrwvm-fullstack-developer-capstone
+frontend-build	Post Checkout repository	2026-11-21T14:22:05.2102063Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+frontend-build	Post Checkout repository	2026-11-21T14:22:05.2149420Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+frontend-build	Post Checkout repository	2026-11-21T14:22:05.2464407Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+frontend-build	Post Checkout repository	2026-11-21T14:22:05.2499342Z http.https://github.com/.extraheader
+frontend-build	Post Checkout repository	2026-11-21T14:22:05.2514914Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+frontend-build	Post Checkout repository	2026-11-21T14:22:05.2558407Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+frontend-build	Post Checkout repository	2026-11-21T14:22:05.2973340Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+frontend-build	Post Checkout repository	2026-11-21T14:22:05.3015711Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+frontend-build	Complete job	﻿2026-11-21T14:22:05.3462149Z Cleaning up orphan processes
+frontend-build	Complete job	2026-11-21T14:22:05.3886204Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
